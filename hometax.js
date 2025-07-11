@@ -1,13 +1,11 @@
 // 동적 모듈 로딩 (loadEval 방식 - 원격 지원)
 moduleLoader.loadEval(__script_path + '/utils.js', 'utils');
-moduleLoader.loadEval(__script_path + '/common/common.js', 'common');
 
 // 세션 관리를 위한 전역 변수
 let pkcEncSsn = "";
 let retStr = "";
 
 console.log("getTimeStamp_nts:", getTimeStamp_nts());
-print_test("============");
 
 // CMS 서명 테스트
 function hometaxLogin(inputObj) {
